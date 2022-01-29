@@ -1,0 +1,37 @@
+<div class="content">
+    <table>
+        <thead>
+            <tr>
+                <th>In</th>
+                <th>Out</th>
+                <th>Duration</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="content">
+            <tr *ngFor="let time of timeList">
+                <td>{{time.inS}}</td>
+                <td>{{time.outS}}</td>
+                <td>{{time.diffS}}</td>
+                <td><button class="center col-md-12" (click)="deleteTime(time._id)">Delete Data</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table>
+        <thead>
+            <tr>
+                <th>In Hours</th>
+                <th>Out Hours</th>
+                <th>First In</th>
+                <th>Last Out</th>
+            </tr>
+        </thead>
+        <tbody id="content">
+            <td>{{InHours}}</td>
+            <td>{{OutHours}}</td>
+            <td>{{FirstIn}}</td>
+            <td>{{LastOut}}</td>
+        </tbody>
+    </table>
+</div>

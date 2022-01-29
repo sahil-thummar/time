@@ -1,0 +1,108 @@
+{
+	"info": {
+		"_postman_id": "ec16581f-233e-4866-a0ac-25fe21c9ce28",
+		"name": "Time",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Save Time",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"timeList\": [\r\n        {\r\n            \"in\": 990,\r\n            \"out\": 780\r\n        },\r\n        {\r\n            \"in\": 570,\r\n            \"out\": 750\r\n        },\r\n        {\r\n            \"in\": 780,\r\n            \"out\": 990\r\n        },\r\n        {\r\n            \"in\": 1570,\r\n            \"out\": 750\r\n        },\r\n        {\r\n            \"in\": 780,\r\n            \"out\": 510\r\n        },\r\n        {\r\n            \"in\": 1005,\r\n            \"out\": 1140\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/time/saveTime",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"time",
+						"saveTime"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Time",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/time/getTime",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"time",
+						"getTime"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Time",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/time/deleteTime?timeId=61f4eb510b8bb68caea9784d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"time",
+						"deleteTime"
+					],
+					"query": [
+						{
+							"key": "timeId",
+							"value": "61f4eb510b8bb68caea9784d"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

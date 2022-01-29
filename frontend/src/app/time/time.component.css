@@ -1,0 +1,42 @@
+.center {
+    text-align: center;
+}
+
+button {
+    font-family: Arial;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    cursor: hand;
+}
+
+button:hover {
+    background-color: #cfd8dc;
+}
+
+table a{
+    cursor: pointer; color:blue !important;
+}
+
+a:hover {
+    color: red !important;
+}
+
+table {
+    width:100%;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;  text-align: center;
+}
+
+th {
+    border-color: white;
+    background-color: #059edc;
+    color: white;
+}
